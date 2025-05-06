@@ -1,26 +1,9 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <title>网页预览</title>
-    <style>
-        html, body {
-            height: 100%;
-            margin: 0;
-        }
-        iframe {
-            width: 100%;
-            height: 100%;
-            border: none;
-        }
-    </style>
-</head>
-<body>
-    <iframe srcdoc="<!DOCTYPE html>
-<html lang='zh-CN'>
+<html lang="zh-CN">
 
 <head>
-  <meta charset='UTF-8'>
-  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>绿源BP部-工作站</title>
   <style>
     body {
@@ -50,10 +33,10 @@
     /* 模块样式 */
    .module {
       border: 1px solid #e6e6e6;
-      margin: 20px;
-      padding: 20px;
+      margin: 10px;
+      padding: 15px;
       background-color: #f9f9f9;
-      width: 80%;
+      width: 90%;
       max-width: 800px;
     }
 
@@ -69,12 +52,30 @@
     /* 按钮样式 */
    .btn {
       display: inline-block;
-      margin: 10px;
-      padding: 15px 30px;
+      margin: 5px;
+      padding: 10px 20px;
       border: 1px solid #e6e6e6;
       text-decoration: none;
       color: #333;
       background-color: white;
+      width: 100%;
+      box-sizing: border-box;
+    }
+
+    /* 手机端优化 */
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 1.2rem;
+      }
+
+      .module {
+        margin: 5px;
+        padding: 10px;
+      }
+
+      .btn {
+        padding: 8px 16px;
+      }
     }
   </style>
 </head>
@@ -85,44 +86,41 @@
   <hr>
 
   <!-- 后勤管理模块 -->
-  <div class='module'>
+  <div class="module">
     <h2>后勤管理</h2>
-    <a href='https://www.kdocs.cn/l/cawToHYAToq8?R=L1MvNA==' class='btn'>清扫记录</a>
-    <a href='https://web.wps.cn/wo/sl/v32CaY5m?app_id=6xwNUhR9HYOzRu6RFnZ76L' class='btn'>宿舍检查</a>
+    <a href="https://www.kdocs.cn/l/cawToHYAToq8?R=L1MvNA==" class="btn">清扫记录</a>
+    <a href="https://web.wps.cn/wo/sl/v32CaY5m?app_id=6xwNUhR9HYOzRu6RFnZ76L" class="btn">宿舍检查</a>
   </div>
 
   <!-- 食堂管理模块 -->
-  <div class='module'>
+  <div class="module">
     <h2>食堂管理</h2>
-    <a href='https://www.kdocs.cn/wo/sl/v13YilWo' class='btn'>菜品记录</a>
-    <a href='https://alidocs.dingtalk.com/i/nodes/dpYLaezmVNLOb212iX56o1dd8rMqPxX6?utm_scene=person_space&iframeQuery=viewId%3DqvGDAH2%26sheetId%3DhERWDMS' class='btn'>固定资产</a>
+    <a href="https://www.kdocs.cn/wo/sl/v13YilWo" class="btn">菜品记录</a>
+    <a href="https://alidocs.dingtalk.com/i/nodes/dpYLaezmVNLOb212iX56o1dd8rMqPxX6?utm_scene=person_space&iframeQuery=viewId%3DqvGDAH2%26sheetId%3DhERWDMS" class="btn">固定资产</a>
   </div>
 
   <!-- 客房管理模块 -->
-  <div class='module'>
+  <div class="module">
     <h2>客房管理</h2>
-    <a href='https://www.kdocs.cn/wo/sl/v11elZ07' class='btn'>客房入住</a>
-    <a href='https://www.kdocs.cn/wo/sl/v13jHuJY?R=L1MvMg==' class='btn'>客房退房</a>
-    <a href='https://www.kdocs.cn/wo/sl/v14QEaBl?R=L1MvMQ==' class='btn'>房态表</a>
+    <a href="https://www.kdocs.cn/wo/sl/v11elZ07" class="btn">客房入住</a>
+    <a href="https://www.kdocs.cn/wo/sl/v13jHuJY?R=L1MvMg==" class="btn">客房退房</a>
+    <a href="https://www.kdocs.cn/wo/sl/v14QEaBl?R=L1MvMQ==" class="btn">房态表</a>
   </div>
 
   <!-- 后勤工作模块 -->
-  <div class='module'>
+  <div class="module">
     <h2>后勤工作</h2>
-    <a href='https://web.wps.cn/wo/sl/v32qU4Ks?app_id=4C7UXLgavPLeBlA9AC4Rpg&R=L1MvNA==' class='btn'>工作记录</a>
-    <a href='https://web.wps.cn/wo/sl/v32lRY5M?app_id=1BAexPj3AXFUGhYRtHRx8b&R=L1MvNA==' class='btn'>待办工作</a>
+    <a href="https://web.wps.cn/wo/sl/v32qU4Ks?app_id=4C7UXLgavPLeBlA9AC4Rpg&R=L1MvNA==" class="btn">工作记录</a>
+    <a href="https://web.wps.cn/wo/sl/v32lRY5M?app_id=1BAexPj3AXFUGhYRtHRx8b&R=L1MvNA==" class="btn">待办工作</a>
   </div>
 
   <!-- 展厅管理模块 -->
-  <div class='module'>
+  <div class="module">
     <h2>展厅管理</h2>
-    <a href='https://mc7q5t27aw.feishu.cn/share/base/view/shrcnB9RSvRpJjpZckjM7ud0Hpc' class='btn'>展厅明细</a>
-    <a href='https://mc7q5t27aw.feishu.cn/share/base/dashboard/shrcnB4ZB4ZZLaPxC8HNUGDC5nb' class='btn'>类型汇总</a>
-    <a href='https://mc7q5t27aw.feishu.cn/share/base/form/shrcnGc7HqUZVpvF8f5tiLhnuFh' class='btn'>车辆录入</a>
+    <a href="https://mc7q5t27aw.feishu.cn/share/base/view/shrcnB9RSvRpJjpZckjM7ud0Hpc" class="btn">展厅明细</a>
+    <a href="https://mc7q5t27aw.feishu.cn/share/base/dashboard/shrcnB4ZB4ZZLaPxC8HNUGDC5nb" class="btn">类型汇总</a>
+    <a href="https://mc7q5t27aw.feishu.cn/share/base/form/shrcnGc7HqUZVpvF8f5tiLhnuFh" class="btn">车辆录入</a>
   </div>
 </body>
 
-</html>" ></iframe>
-</body>
 </html>
-    
