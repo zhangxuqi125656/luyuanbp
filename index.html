@@ -58,22 +58,31 @@
       text-decoration: none;
       color: #333;
       background-color: white;
-      width: 100%;
-      box-sizing: border-box;
     }
 
-    /* 手机端优化 */
+    /* 电脑端样式（屏幕宽度大于 768px） */
+    @media (min-width: 769px) {
+     .btn {
+        display: inline-block;
+        width: auto;
+      }
+    }
+
+    /* 手机端样式（屏幕宽度小于等于 768px） */
     @media (max-width: 768px) {
       h1 {
         font-size: 1.2rem;
       }
 
-      .module {
+     .module {
         margin: 5px;
         padding: 10px;
       }
 
-      .btn {
+     .btn {
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
         padding: 8px 16px;
       }
     }
